@@ -1,20 +1,22 @@
 {
-  "name": "fenix-be",
+  "name": "@repo/bull-mq",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx ./index.ts"
+    "build": "tsc"
+  },
+  "exports": {
+    "types": "./src/index.ts",
+    "default": "./dist/index.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@fastify/cors": "^9.0.1",
-    "@repo/bull-mq": "^1.0.0",
-    "fastify": "^4.28.0"
+    "bullmq": "^5.8.2"
   },
   "devDependencies": {
-    "tsx": "^4.15.7"
+    "typescript": "latest"
   }
 }
